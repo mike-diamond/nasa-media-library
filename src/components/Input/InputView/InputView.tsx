@@ -2,7 +2,7 @@ import React, { useState, useCallback, useRef, useId, useEffect, ChangeEventHand
 import cx from 'classnames'
 
 import Text from '../../Text/Text'
-import Icon, { IconProps } from '../../Icon/Icon'
+import Icon from '../../Icon/Icon'
 import ButtonBase from '../../ButtonBase/ButtonBase'
 
 import s from './InputView.module.scss'
@@ -10,7 +10,7 @@ import s from './InputView.module.scss'
 
 export type InputViewProps = {
   className?: string
-  icon?: IconProps['name']
+  icon?: IconName
   value: string
   label: string
   error?: string | null | boolean
@@ -101,7 +101,7 @@ const InputView: React.FC<InputViewProps> = (props) => {
           Boolean(icon) && (
             <Icon
               className="mr-16"
-              name={icon as IconProps['name']}
+              name={icon as IconName}
               color="titanic"
               size={16}
             />

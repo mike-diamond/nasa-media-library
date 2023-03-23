@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Icon, { IconProps } from 'components/Icon/Icon'
+import Icon from 'components/Icon/Icon'
 import Text from 'components/Text/Text'
 
 import cx from 'classnames'
@@ -9,7 +9,7 @@ import cx from 'classnames'
 type InfoItemProps = {
   className?: string
   title?: string
-  icon: IconProps['name']
+  icon: IconName
 }
 
 const InfoItem: React.FC<InfoItemProps> = (props) => {

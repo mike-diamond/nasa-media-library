@@ -4,7 +4,6 @@ import cx from 'classnames'
 
 import Text from 'components/Text/Text'
 import InfoItem from 'components/InfoItem/InfoItem'
-import { IconProps } from 'components/Icon/Icon'
 
 import s from './CollectionItem.module.scss'
 
@@ -67,7 +66,7 @@ const CollectionItem: React.FC<CollectionItemProps> = (props) => {
             <InfoItem
               key={index}
               className="mt-12"
-              icon={icon as IconProps['name']}
+              icon={icon as IconName}
               title={title}
             />
           ))

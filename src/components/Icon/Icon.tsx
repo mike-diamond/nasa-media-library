@@ -10,7 +10,7 @@ export const sizes = [ 16, 24, 32 ] as const
 
 export type IconProps = {
   className?: string
-  name: 'arrow' | 'close' | 'photo' | 'search' | 'geopoint' | 'spinner'
+  name: IconName
   size?: typeof sizes[number]
   color?: Color | 'inherit'
 }
