@@ -18,7 +18,7 @@ const BackButton: React.FC<BackButtonProps> = (props) => {
 
   return (
     <NextLink
-      className={cx(s.button, className, 'flex items-center')}
+      className={cx(s.button, className, 'inline-flex items-center')}
       href={href}
       prefetch
       data-testid="backButton"
