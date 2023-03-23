@@ -1,0 +1,21 @@
+@include except-mobile {
+
+  .container {
+    height: 80rem;
+  }
+}
+
+@include mobile {
+
+  .container {
+    height: 191rem;
+  }
+}
+
+.scrollButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 24rem;
+  margin-bottom: 24rem;
+}

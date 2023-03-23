@@ -1,0 +1,26 @@
+@mixin button-style-color($color, $opacity) {
+  background-color: $color;
+
+  &:not(.disabled) {
+    @include button-colors($color, background-color);
+  }
+
+  &.disabled {
+    opacity: $opacity;
+  }
+}
+
+.button {
+  min-width: 44rem;
+  @include basic-transition;
+}
+
+.primary {
+  height: 48rem;
+  @include button-style-color($color-godfather, 0.4);
+}
+
+.secondary {
+  height: 20rem;
+  @include button-style-color($color-memento, 0.4);
+}

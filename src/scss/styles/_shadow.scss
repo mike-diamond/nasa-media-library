@@ -1,0 +1,29 @@
+.shadow-titanic {
+  @include shadow-titanic;
+}
+
+.shadow-titanic-hover {
+  @include basic-transition;
+
+  @media (hover: hover) {
+
+    &:hover {
+      @include shadow-titanic;
+    }
+  }
+}
+
+.shadow-rocky {
+  @include shadow-rocky;
+}
+
+.shadow-rocky-hover {
+  @include basic-transition;
+
+  @media (hover: hover) {
+
+    &:hover {
+      @include shadow-rocky;
+    }
+  }
+}

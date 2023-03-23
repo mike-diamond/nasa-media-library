@@ -1,0 +1,26 @@
+.container {
+
+  .image {
+    @include basic-transition;
+  }
+
+  @media (hover: hover) {
+
+    &:hover {
+
+      .image {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.description {
+  background: rgba(17, 24, 39, 0.48);
+  background: linear-gradient(0deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0) 100%);
+  min-height: 116rem;
+}
+
+.fill {
+  height: 320px;
+}

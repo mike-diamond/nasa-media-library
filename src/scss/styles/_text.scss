@@ -1,0 +1,49 @@
+$headers: (
+  ('h72', 72, 72, 700),
+  ('h56', 56, 56, 700),
+  ('h40', 40, 44, 700),
+  ('h32', 32, 36, 700),
+  ('h28', 28, 32, 700),
+  ('h24', 24, 28, 700),
+  ('h20', 20, 24, 700),
+  ('h16', 16, 20, 700),
+);
+
+$controls: (
+  ('c20', 20, 24, 400),
+  ('c16', 16, 20, 400),
+  ('c14', 14, 18, 400),
+  ('c12', 12, 16, 400),
+);
+
+$text: (
+  ('t20', 20, 24, 400),
+  ('t16', 16, 20, 400),
+  ('t14', 14, 18, 400),
+);
+
+$notes: (
+  ('n12', 12, 16, 400),
+);
+
+$groups: (
+  $headers,
+  $controls,
+  $text,
+  $notes,
+);
+
+@each $group in $groups {
+  @each $values in $group {
+    $name: nth($values, 1);
+    $fontSize: nth($values, 2);
+    $lineHeight: nth($values, 3);
+    $fontWeight: nth($values, 4);
+
+    .text-#{$name} {
+      font-size: #{$fontSize}rem;
+      line-height: #{$lineHeight}rem;
+      font-weight: #{$fontWeight};
+    }
+  }
+}

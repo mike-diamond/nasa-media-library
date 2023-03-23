@@ -1,0 +1,22 @@
+.aspectContainer {
+  padding-bottom: 300 / 450 * 100%;
+}
+
+.arrowLeft {
+  top: 50%;
+  margin-top: -16rem;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.arrowRight {
+  top: 50%;
+  margin-top: -16rem;
+  transform: rotate(180deg);
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

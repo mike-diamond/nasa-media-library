@@ -1,0 +1,4 @@
+node_modules
+/.next/
+.idea/
+e2e/report.json

@@ -1,0 +1,23 @@
+.info {
+  height: 44rem;
+  background: linear-gradient(0deg, rgb(17, 24, 39) 0%, rgba(17, 24, 39, 0) 100%);
+}
+
+
+@include media-tablet-landscape-and-higher {
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text {
+    margin-left: 24rem;
+  }
+}
+
+@include media-tablet-portrait-and-lower {
+
+  .text {
+    margin-top: 24rem;
+  }
+}

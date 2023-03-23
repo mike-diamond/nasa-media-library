@@ -1,0 +1,120 @@
+// Blue
+$color-titanic: #04153e;
+$color-gladiator: #091f52;
+$color-interstellar: #113079;
+$color-godfather: #214eb0;
+$color-rocky: #3d75e4;
+$color-alien: #81abee;
+$color-memento: #c0d6f6;
+$color-arrival: #e4edfb;
+$color-rush: #f6f9fe;
+
+// Gray
+$color-bladerunner: #111827;
+$color-harakiri: #1c2331;
+$color-vertigo: #2e3648;
+$color-troy: #495469;
+$color-metropolis: #6f7a90;
+$color-pianist: #a2abbe;
+$color-inception: #cdd3df;
+$color-apocalypse: #e6ebf5;
+$color-trainspotting: #f5f8fc;
+
+// Red
+$color-prestige: #34040f;
+$color-exorcist: #480a17;
+$color-predator: #711426;
+$color-stalker: #ab213a;
+$color-fargo: #e14761;
+$color-indiana: #f196a5;
+$color-bandit: #f7cfd5;
+$color-romance: #fbe9ec;
+$color-joker: #fef8f9;
+
+// Green
+$color-oldboy: #142202;
+$color-forrest: #1f3404;
+$color-whiplash: #304d0a;
+$color-shining: #467510;
+$color-matrix: #57a003;
+$color-drive: #8dc95e;
+$color-psycho: #c7e6a8;
+$color-amadeus: #e3fed8;
+$color-shawshank: #f6fcf3;
+
+// Brown
+$color-schindler: #2a1704;
+$color-capernaum: #3a1f03;
+$color-platoon: #643302;
+$color-mulholland: #9e4f00;
+$color-lebowski: #d06e0b;
+$color-snatch: #e9a35d;
+$color-chinatown: #f8d6b5;
+$color-jaws: #fbecdd;
+$color-warrior: #fefaf6;
+
+// White / Black
+$color-white: #fff;
+$color-black: #141414;
+
+
+// Colors map
+$colors: (
+  'white': $color-white,
+  'black': $color-black,
+
+  // Blue
+  'titanic': $color-titanic,
+  'gladiator': $color-gladiator,
+  'interstellar': $color-interstellar,
+  'godfather': $color-godfather,
+  'rocky': $color-rocky,
+  'alien': $color-alien,
+  'memento': $color-memento,
+  'arrival': $color-arrival,
+  'rush': $color-rush,
+
+  // Gray
+  'bladerunner': $color-bladerunner,
+  'harakiri': $color-harakiri,
+  'vertigo': $color-vertigo,
+  'troy': $color-troy,
+  'metropolis': $color-metropolis,
+  'pianist': $color-pianist,
+  'inception': $color-inception,
+  'apocalypse': $color-apocalypse,
+  'trainspotting': $color-trainspotting,
+
+  // Red
+  'prestige': $color-prestige,
+  'exorcist': $color-exorcist,
+  'predator': $color-predator,
+  'stalker': $color-stalker,
+  'fargo': $color-fargo,
+  'indiana': $color-indiana,
+  'bandit': $color-bandit,
+  'romance': $color-romance,
+  'joker': $color-joker,
+
+  // Brown
+  'schindler': $color-schindler,
+  'capernaum': $color-capernaum,
+  'platoon': $color-platoon,
+  'mulholland': $color-mulholland,
+  'lebowski': $color-lebowski,
+  'snatch': $color-snatch,
+  'chinatown': $color-chinatown,
+  'jaws': $color-jaws,
+  'warrior': $color-warrior,
+
+  // Green
+  'oldboy': $color-oldboy,
+  'forrest': $color-forrest,
+  'whiplash': $color-whiplash,
+  'shining': $color-shining,
+  'matrix': $color-matrix,
+  'drive': $color-drive,
+  'psycho': $color-psycho,
+  'amadeus': $color-amadeus,
+  'shawshank': $color-shawshank,
+);

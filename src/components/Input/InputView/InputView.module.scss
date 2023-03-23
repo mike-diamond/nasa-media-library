@@ -1,0 +1,91 @@
+$border-color-default: rgba($color-titanic, 0.10);
+$border-color-hover: rgba($color-titanic, 0.30);
+$border-color-focus: $color-rocky;
+$border-color-error: rgba($color-fargo, 0.10);
+$border-color-error-hover: rgba($color-fargo, 0.50);
+
+$bg-color-default: rgba($color-trainspotting, 0.64);
+$bg-color-hover: rgba($color-trainspotting, 0.48);
+$bg-color-focus: rgba($color-trainspotting, 0.36);
+$bg-color-error: rgba($color-fargo, 0.10);
+$bg-color-error-hover: rgba($color-fargo, 0.15);
+
+@mixin field-colors($border-color, $bg-color) {
+  border-color: $border-color;
+  background-color: $bg-color;
+}
+
+.container {
+  height: 48rem;
+  border: 1px solid;
+  cursor: text;
+  @include basic-transition();
+  @include field-colors($border-color-default, $bg-color-default);
+
+  &:not(.disabled) {
+
+    @media (hover: hover) {
+      &:hover {
+        @include field-colors($border-color-hover, $bg-color-hover);
+      }
+    }
+
+    &.focused {
+      @include field-colors($border-color-focus, $bg-color-focus);
+    }
+
+    &.error {
+      @include field-colors($border-color-error, $bg-color-error);
+
+      @media (hover: hover) {
+        &:hover {
+          @include field-colors($border-color-error-hover, $bg-color-error-hover);
+        }
+      }
+    }
+  }
+
+  &.filled,
+  &.focused {
+
+    .label {
+      top: 5rem;
+    }
+  }
+
+  &.focused,
+  &:hover {
+
+    .crossButton {
+      opacity: 1;
+    }
+  }
+}
+
+.label {
+  top: 14rem;
+  pointer-events: none;
+  @include basic-transition();
+}
+
+.field {
+  background-color: inherit;
+  appearance: none;
+  caret-color: $color-titanic;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+
+  &:focus {
+    background-color: inherit;
+  }
+}
+
+.description {
+  color: rgba($color-titanic, 0.5)
+}
+
+.crossButton {
+  opacity: 0;
+  @include basic-transition();
+}

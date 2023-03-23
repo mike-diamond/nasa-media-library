@@ -1,0 +1,27 @@
+.link-color-black {
+  @include link-colors(rgba($color-black, .72), $color-black);
+}
+
+.link-color-metropolis {
+  @include link-colors(rgba($color-metropolis, .72), $color-metropolis);
+}
+
+.link-color-pianist {
+  @include link-colors(rgba($color-pianist, .72), $color-pianist);
+}
+
+.link-color-titanic {
+  @include link-colors($color-titanic, rgba($color-titanic, .72));
+}
+
+.link-color-fargo {
+  @include link-colors($color-fargo, rgba($color-fargo, .72));
+}
+
+.link-color-rocky {
+  @include link-colors($color-rocky, rgba($color-rocky, .72));
+}
+
+.link-color-pianist-rocky {
+  @include link-colors($color-pianist, $color-rocky);
+}

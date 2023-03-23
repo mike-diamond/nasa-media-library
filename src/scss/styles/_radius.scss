@@ -1,0 +1,64 @@
+// Radius
+.radius-0 {
+  border-radius: 0 !important;
+}
+
+.radius-top {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.radius-bottom {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.radius-right {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.radius-left {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.radius-2 {
+  border-radius: 2rem;
+}
+
+.radius-4 {
+  border-radius: 4rem;
+}
+
+.radius-6 {
+  border-radius: 6rem;
+}
+
+.radius-8 {
+  border-radius: 8rem;
+}
+
+.radius-12 {
+  border-radius: 12rem;
+}
+
+.radius-16 {
+  border-radius: 16rem;
+}
+
+.radius-24 {
+  border-radius: 24rem;
+}
+
+.radius-32 {
+  border-radius: 32rem;
+}
+
+.radius-72 {
+  border-radius: 72rem;
+}
+
+.radius-100 {
+  border-radius: 100%;
+}
