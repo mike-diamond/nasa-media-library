@@ -1,6 +1,6 @@
-import React, { ReactNode, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { ReactNode } from 'react'
 import cx from 'classnames'
-import { observer, useEventListener } from 'modules'
+import { observer, useMedia } from 'modules'
 
 import Button from 'components/Button/Button'
 
@@ -15,21 +15,7 @@ type ObserverWrapperProps = {
 const Observer: React.FC<ObserverWrapperProps> = (props) => {
   const { className, children } = props
 
-  const [ isDesktop, setDesktop ] = useState(true)
-
-  const checkDesktop = useCallback(() => {
-    if (typeof window.matchMedia === 'function') {
-      const isDesktop = window.matchMedia?.(`(min-width: 569px)`).matches
-
-      setDesktop(isDesktop)
-    }
-  }, [])
-
-  useEventListener('resize', checkDesktop)
-
-  useEffect(() => {
-    checkDesktop()
-  }, [])
+  const { isDesktop } = useMedia()
 
   const { ref, isVisible: isObserverVisible } = observer.useEntry({
     threshold: 0.9999,

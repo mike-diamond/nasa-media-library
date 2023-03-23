@@ -89,3 +89,13 @@ $bg-color-error-hover: rgba($color-fargo, 0.15);
   opacity: 0;
   @include basic-transition();
 }
+
+@include mobile {
+
+  .error {
+
+    .label {
+      color: $color-fargo;
+    }
+  }
+}

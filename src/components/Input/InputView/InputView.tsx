@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useRef, useId, useEffect, ChangeEventHandler } from 'react'
 import cx from 'classnames'
 
+import { useMedia } from 'modules'
+
 import Text from '../../Text/Text'
 import Icon from '../../Icon/Icon'
 import ButtonBase from '../../ButtonBase/ButtonBase'
@@ -26,6 +28,8 @@ const InputView: React.FC<InputViewProps> = (props) => {
     className, value, error, label, icon, disabled, isRequired, dataTestId,
     onCrossClick, onChange
   } = props
+
+  const { isMobile } = useMedia()
 
   const ref = useRef<HTMLInputElement>(null)
   const [ isFocused, setFocused ] = useState(false)
@@ -110,7 +114,7 @@ const InputView: React.FC<InputViewProps> = (props) => {
         <div className="w-full h-full inline-flex flex-col justify-center relative">
           <Text
             className={cx(s.label, 'absolute left-0 w-full overflow-ellipsis whitespace-nowrap opacity-60')}
-            message={label}
+            message={isMobile && error ? error as string : label}
             tag="label"
             size={(value || isFocused && !disabled) ? 'n12' : 't14'}
             color="titanic"
@@ -136,8 +140,10 @@ const InputView: React.FC<InputViewProps> = (props) => {
         </div>
       </div>
       {
-        Boolean(error) && (
-          <div className="py-8 px-16 radius-8 absolute left-0 top-100 mt-4">
+        Boolean(error && !isMobile) && (
+          <div
+            className="py-8 px-16 radius-8 absolute left-0 top-100 mt-4"
+          >
             <Text
               size="n12"
               color="fargo"
