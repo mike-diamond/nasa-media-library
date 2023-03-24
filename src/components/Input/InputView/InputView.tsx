@@ -126,6 +126,7 @@ const InputView: React.FC<InputViewProps> = (props) => {
               typeof onCrossClick === 'function' && isFilled && (
                 <ButtonBase
                   className={s.crossButton}
+                  dataTestId={`${testId}-crossButton`}
                   onClick={onCrossClick}
                 >
                   <Icon
